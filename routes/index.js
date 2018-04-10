@@ -7,7 +7,11 @@ router.get('/', async (ctx, next) => {
 })
 
 router.get('/string', async (ctx, next) => {
-  ctx.body = 'koa2 string'
+  ctx.body = 'koa2 string from get'
+})
+
+router.post('/string', async (ctx, next) => {
+  ctx.body = 'koa2 string from post'
 })
 
 router.get('/json', async (ctx, next) => {
