@@ -1,5 +1,5 @@
 {
-  "name": "node-server",
+  "name": "test_koa2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,8 +19,7 @@
     "koa-router": "^7.1.1",
     "koa-static": "^3.0.0",
     "koa-views": "^5.2.1",
-    "koa2-cors": "^2.0.5",
-    "npm": "^6.0.1",
+    "mongoose": "^5.2.2",
     "pug": "^2.0.0-rc.1"
   },
   "devDependencies": {
