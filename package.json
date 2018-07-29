@@ -23,6 +23,7 @@
     "pug": "^2.0.0-rc.1"
   },
   "devDependencies": {
+    "ftp": "^0.3.10",
     "nodemon": "^1.8.1"
   }
 }

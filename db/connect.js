@@ -1,14 +1,9 @@
 const mongoose = require('mongoose');
 
-exports.start = (success) => {
-    mongoose.connect('mongodb://127.0.0.1/test');
-    const db = mongoose.connection;
-    db.on('error', console.error.bind(console, 'connection error:'));
-    db.once('open', () => {
-        // we're connected!
-        console.log('connected db: blog');
-        if (success) {
-            success();
-        }
-    });
-};
+mongoose.connect('mongodb://127.0.0.1/test', function (err) {
+    if (err) {
+        console.log(err)
+    } else {
+        console.log('数据库成功连接到：mongodb://127.0.0.1/test')
+    }
+});
